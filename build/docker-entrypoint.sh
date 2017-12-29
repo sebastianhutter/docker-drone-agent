@@ -17,4 +17,4 @@ function load_secret {
 
 load_secret DRONE_SECRET ${DRONE_SECRET}
 
-/bin/drone-agent
+exec /bin/drone-agent
