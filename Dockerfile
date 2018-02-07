@@ -4,7 +4,7 @@ RUN apk add --no-cache bash
 
 # extend the drone image with a working shell and cat
 # so we can have a simple entrypoint script running
-FROM drone/agent:0.8
+FROM drone/agent:0.8.4
 
 COPY --from=alpine /bin/bash /bin/bash
 COPY --from=alpine /bin/cat /bin/cat
